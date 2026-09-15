@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — Pirlimpinpins</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">Pirlimpin<span>pins</span></a>
+  </div>
+</header>
+
+<section class="wrap" style="padding:56px 0; max-width:720px;">
+  <h1 style="font-size:30px; margin-bottom:20px;">Política de Privacidade</h1>
+  <p>Este site é operado por Pirlimpinpins. Esta página explica quais informações coletamos e como usamos.</p>
+
+  <h2 style="font-size:20px; margin-top:28px;">Quais dados coletamos</h2>
+  <p>Não coletamos dados através de formulários neste site. Ao clicar em "Pedir no WhatsApp", você é redirecionado ao WhatsApp, e a conversa segue as políticas de privacidade do próprio WhatsApp/Meta.</p>
+
+  <h2 style="font-size:20px; margin-top:28px;">Cookies e anúncios</h2>
+  <p>Este site pode usar cookies e tecnologias semelhantes do Google Ads para medir o desempenho de anúncios e campanhas. Você pode gerenciar suas preferências de anúncios diretamente nas configurações da sua conta Google.</p>
+
+  <h2 style="font-size:20px; margin-top:28px;">Contato</h2>
+  <p>Dúvidas sobre esta política podem ser enviadas pelo WhatsApp de contato da loja.</p>
+
+  <p style="margin-top:28px; color: var(--ink-soft); font-size:14px;">Última atualização: <span id="data"></span></p>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="ano"></span> Pirlimpinpins</span>
+    <a href="index.html">Voltar ao site</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("ano").textContent = new Date().getFullYear();
+  document.getElementById("data").textContent = new Date().toLocaleDateString("pt-BR");
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pirlimpinpins — Bottons, ímãs e impressões personalizadas</title>
+<meta name="description" content="Bottons, ímãs de geladeira e impressões personalizadas, feitos rápido e com capricho. Peça pelo WhatsApp.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">Pirlimpin<span>pins</span></div>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="badge-fast">⚡ Feito e enviado rápido</div>
+      <h1>Bottons, ímãs e impressões <em>com um toque de mágica</em></h1>
+      <p class="lead">Peças personalizadas para presentear, decorar ou vender — do pedido à entrega, sem enrolação.</p>
+      <div class="hero-actions">
+        <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+        <a href="#contato" class="btn btn-ghost">Fazer pedido</a>
+      </div>
+    </div>
+    <div class="dust" aria-hidden="true">
+      <span style="width:14px;height:14px;background:var(--gold);top:10%;left:20%;"></span>
+      <span style="width:22px;height:22px;background:var(--coral);top:30%;left:60%;"></span>
+      <span style="width:10px;height:10px;background:var(--pink);top:55%;left:15%;"></span>
+      <span style="width:30px;height:30px;background:var(--gold);top:65%;left:70%;opacity:0.5;"></span>
+      <span style="width:16px;height:16px;background:var(--pink);top:15%;left:75%;"></span>
+      <span style="width:12px;height:12px;background:var(--coral);top:80%;left:40%;"></span>
+      <span style="width:8px;height:8px;background:var(--ink);top:5%;left:45%;opacity:0.15;"></span>
+    </div>
+  </div>
+</section>
+
+<section class="categorias wrap" id="catalogo">
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-cat="todos">Todos</button>
+    <button class="tab" data-cat="bottons">Bottons</button>
+    <button class="tab" data-cat="imas">Ímãs</button>
+    <button class="tab" data-cat="impressoes">Impressões</button>
+  </div>
+</section>
+
+<section class="catalogo wrap">
+  <div class="grid" id="grid">
+    <!-- produtos inseridos via JS a partir de produtos.json -->
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="wrap">
+    <div>
+      <h2>De onde vem o nome</h2>
+      <p>Pirlimpimpim é o pó mágico da nossa infância: transforma o simples em especial. É esse espírito que colocamos em cada botton, ímã e impressão — pequenos objetos que carregam memória, personalidade e cor.</p>
+    </div>
+    <div>
+      <h2>Feito rápido, feito com cuidado</h2>
+      <p>Trabalhamos com produção ágil: seu pedido é preparado assim que confirmado, sem fila longa de espera. Ideal para presentes de última hora, eventos e lembrancinhas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="wrap">
+    <h2>Vamos criar sua peça</h2>
+    <p>Manda sua ideia, sua foto ou frase pelo WhatsApp e a gente cuida do resto.</p>
+    <a class="btn btn-primary" id="whatsapp-link" href="https://wa.me/5500000000000?text=Oi%2C%20quero%20fazer%20um%20pedido%20na%20Pirlimpinpins!" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="ano"></span> Pirlimpinpins</span>
+    <a href="privacidade.html">Política de privacidade</a>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

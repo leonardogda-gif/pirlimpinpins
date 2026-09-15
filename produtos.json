@@ -1,0 +1,50 @@
+[
+  {
+    "id": "botton-01",
+    "categoria": "bottons",
+    "nome": "Botton Floral 4,5cm",
+    "preco": "R$ 6,00",
+    "imagem": "",
+    "destaque": true
+  },
+  {
+    "id": "botton-02",
+    "categoria": "bottons",
+    "nome": "Botton Frase Divertida",
+    "preco": "R$ 6,00",
+    "imagem": "",
+    "destaque": false
+  },
+  {
+    "id": "ima-01",
+    "categoria": "imas",
+    "nome": "Ímã Redondo Personalizado 5cm",
+    "preco": "R$ 8,00",
+    "imagem": "",
+    "destaque": true
+  },
+  {
+    "id": "ima-02",
+    "categoria": "imas",
+    "nome": "Ímã Foto Instantânea",
+    "preco": "R$ 9,00",
+    "imagem": "",
+    "destaque": false
+  },
+  {
+    "id": "impressao-01",
+    "categoria": "impressoes",
+    "nome": "Impressão Fotográfica 10x15",
+    "preco": "R$ 4,00",
+    "imagem": "",
+    "destaque": false
+  },
+  {
+    "id": "impressao-02",
+    "categoria": "impressoes",
+    "nome": "Pôster A4 Fosco",
+    "preco": "R$ 12,00",
+    "imagem": "",
+    "destaque": true
+  }
+]
