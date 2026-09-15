@@ -27,7 +27,7 @@ const grid = document.getElementById("grid");
 if (grid) {
   async function carregarProdutos() {
     try {
-      const resp = await fetch("produtos.json");
+      const resp = await fetch(`produtos.json?v=${Date.now()}`, { cache: "no-store" });
       produtos = await resp.json();
       renderizar();
     } catch (e) {

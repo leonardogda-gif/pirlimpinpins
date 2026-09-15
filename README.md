@@ -37,10 +37,18 @@ Edite só o arquivo **produtos.json** — não precisa mexer no HTML/CSS. Cada p
 ## Como publicar no GitHub Pages
 
 1. Crie um repositório novo no GitHub (ex: `pirlimpinpins-site`).
-2. Suba todos os arquivos desta pasta para a raiz do repositório.
+2. Suba todos os arquivos desta pasta para a raiz do repositório — **incluindo a pasta `.github/`**, que fica oculta às vezes mas precisa ir junto.
 3. No repositório, vá em **Settings → Pages**.
-4. Em "Source", selecione a branch `main` e a pasta `/ (root)`.
+4. Em "Source", selecione **GitHub Actions** (não "Deploy from a branch" — é essa troca que ativa a atualização automática de cache).
 5. Salve — em alguns minutos o site estará em `https://SEU-USUARIO.github.io/pirlimpinpins-site/`.
+
+### Por que isso resolve o site "travado" na versão antiga
+
+- O `produtos.json` agora é buscado sempre com uma marcação de tempo (`?v=...`) e sem cache, então toda vez que você edita o catálogo, ele aparece na hora.
+- O `style.css` e o `app.js` recebem automaticamente uma "versão" nova (baseada no commit) a cada vez que você sobe uma alteração no GitHub, via `.github/workflows/deploy.yml`. Isso obriga o navegador a baixar a versão mais recente desses arquivos, em vez de usar a que já tinha guardada.
+- Você não precisa fazer nada manualmente — isso roda sozinho toda vez que você edita algum arquivo no GitHub e comita a mudança.
+
+Se mesmo assim uma página parecer desatualizada, um `Ctrl+Shift+R` (recarregar ignorando cache) resolve na hora.
 
 ## Google Ads
 
