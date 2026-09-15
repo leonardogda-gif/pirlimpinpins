@@ -23,6 +23,8 @@ body {
   color: var(--ink);
   font-family: 'Work Sans', sans-serif;
   line-height: 1.55;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
 }
 
 h1, h2, h3, .brand {

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo — Pirlimpinpins</title>
+<meta name="description" content="Catálogo de bottons, ímãs de geladeira e impressões personalizadas da Pirlimpinpins.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">Pirlimpin<span>pins</span></a>
+    <nav>
+      <a href="index.html#sobre">Sobre</a>
+      <a href="#" class="whatsapp-generic" target="_blank" rel="noopener">Fazer pedido</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:48px 0 12px;">
+  <div class="wrap" style="display:block;">
+    <h1 style="font-size:34px; max-width:none;">Catálogo</h1>
+    <p class="lead" style="max-width:520px;">Escolha a categoria e peça direto pelo WhatsApp.</p>
+  </div>
+</section>
+
+<section class="categorias wrap">
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-cat="todos">Todos</button>
+    <button class="tab" data-cat="bottons">Bottons</button>
+    <button class="tab" data-cat="imas">Ímãs</button>
+    <button class="tab" data-cat="impressoes">Impressões</button>
+  </div>
+</section>
+
+<section class="catalogo wrap">
+  <div class="grid" id="grid">
+    <!-- produtos inseridos via JS a partir de produtos.json -->
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="ano"></span> Pirlimpinpins</span>
+    <a href="privacidade.html">Política de privacidade</a>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
