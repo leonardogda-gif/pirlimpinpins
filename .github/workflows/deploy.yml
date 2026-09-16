@@ -21,24 +21,23 @@ jobs:
       - name: Baixar o código
         uses: actions/checkout@v4
 
-name: Trocar __VERSION__ pelo hash do commit (força atualização de cache)
-run: |
-  VERSION="${GITHUB_SHA::8}"
-  find . -name "*.html" -not -path "./.git/*" -exec sed -i "s/__VERSION__/$VERSION/g" {} \;
+      - name: Trocar __VERSION__ pelo hash do commit (força atualização de cache)
+        run: |
+          VERSION="${GITHUB_SHA::8}"
+          find . -name "*.html" -not -path "./.git/*" -exec sed -i "s/__VERSION__/$VERSION/g" {} \;
 
-name: Preparar arquivos para publicação
-uses: actions/upload-pages-artifact@v3
-with:
-  path: .
+      - name: Preparar arquivos para publicação
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
 
-deploy:
-needs: build
-runs-on: ubuntu-latest
-environment:
-name: github-pages
-url: ${{ steps.deployment.outputs.page_url }}
-steps:
-
-name: Publicar no GitHub Pages
-id: deployment
-uses: actions/deploy-pages@v4
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
